@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gatlinburg and Pigeon Forge</title>
+  <link rel="stylesheet" href="frontpage.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+	<div class="dropdown">
+	  <button class="dropbtn">Home</button>
+	  <div class="dropdown-content">
+		<a href="index.html">Home</a>
+	  </div>
+	</div>
+    <div class="dropdown">
+      <button class="dropbtn">About Us</button>
+      <div class="dropdown-content">
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
+    </div>
+	
+    <div class="dropdown">
+      <button class="dropbtn">Gatlinburg</button>
+      <div class="dropdown-content">
+        <a href="gatlinburg.html">Gatlinburg</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="lodging.html">Lodging</a>
+		<a href="restraurants.html">Restaurants</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Pigeon Forge</button>
+      <div class="dropdown-content">
+        <a href="pigeonforge.html">Pigeon Forge</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="lodging.html">Lodging</a>
+		<a href="restraurants.html">Restaurants</a>
+      </div>
+    </div>
+  </div>
+	<!-- Image Rollover - I initially forgot this had to be rollover hence the hover names -->
+  <div class="hover-image">
+    <img id="rollover-img"
+       src="gatlinburg.png"
+       alt="The Two Cities"
+       onmouseover="this.src='pigeonforge.jpg'"
+       onmouseout="this.src='gatlinburg.png'">
+  </div>
+
+  
+   <!-- Lodging Attraction and Restaurants -->
+  <div class="boxes">
+    <div class="box">
+      <img src="pigeonforgeattraction.jpg" alt="Attractions">
+      <a href="attractions.html" class="box-button">Attractions</a>
+      <div class="text">There are a variety of attractions in both Pigeon Forge and Gatlinburg for all ages and interests. Some of the local attractions include the the Gatlinburg Space Needle or the Pigeon Forge Titanic Museum!</div>
+    </div>
+    <div class="box">
+      <img src="gatlinburgrestaurant.jpg" alt="Restaurants">
+      <a href="restraurants.html" class="box-button">Restaurants</a>
+      <div class="text">Different dining options for different tastes and dietary needs. From the enjoyable pancakes at The Pancake Pantry to the Americana served at Paula Deen's Family Kitchen, you'll have a variety of dishes to dine on.</div>
+    </div>
+    <div class="box">
+      <img src="cabinlodging.png" alt="Lodging">
+      <a href="lodging.html" class="box-button">Lodgings</a>
+      <div class="text">Stay in the Smokey Mountains or down in town near Dollywood, there are plenty of places to rest your head and explore the region.</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gatlinburg</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function changeImage(img, newSrc) {
+      img.dataset.original = img.src;
+      img.src = newSrc;
+    }
+
+    function restoreImage(img) {
+      img.src = img.dataset.original;
+    }
+  </script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="dropdown">
+	  <button class="dropbtn">Home</button>
+	  <div class="dropdown-content">
+		<a href="index.html">Home</a>
+	  </div>
+	</div>
+    <div class="dropdown">
+      <button class="dropbtn">About Us</button>
+      <div class="dropdown-content">
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
+    </div>
+    
+    <div class="dropdown">
+      <button class="dropbtn">Gatlinburg</button>
+      <div class="dropdown-content">
+        <a href="gatlinburg.html">Gatlinburg</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="lodging.html">Lodging</a>
+        <a href="restaurants.html">Restaurants</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Pigeon Forge</button>
+      <div class="dropdown-content">
+        <a href="pigeonforge.html">Pigeon Forge</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="lodging.html">Lodging</a>
+        <a href="restaurants.html">Restaurants</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function changeImage(img, newSrc) {
+      img.dataset.original = img.src;
+      img.src = newSrc;
+    }
+
+    function restoreImage(img) {
+      img.src = img.dataset.original;
+    }
+  </script>
+</head>
+<body>
+
+  <h2>Hover over the image below</h2>
+
+  <img
+    src="images/gatlinburgview.jpg"
+    class="hover-image"
+    alt="Sky View"
+    onmouseover="changeImage(this, 'images/gatlinburg2.jpg')"
+    onmouseout="restoreImage(this)"
+  />
+
+
+    <!-- Gatlinburg Info -->
+    <div class="section-container">
+      <div class="section">
+        <h3>Basic Info on Gatlinburg Attractions</h3>
+        <p>Enjoy the SkyLift Park, Ripley's Aquarium, and Anakeesta Adventure Park in the heart of the Smokies.</p>
+      </div>
+      <div class="section">
+        <h3>Basic Info on Gatlinburg Restaurants</h3>
+        <p>Savor meals at The Pancake Pantry, Crockett’s Breakfast Camp, and other local favorites.</p>
+      </div>
+      <div class="section">
+        <h3>Basic Info on Gatlinburg Lodging</h3>
+        <p>Relax in mountain lodges, charming inns, or romantic cabins with stunning views.</p>
+      </div>
+    </div>
+
+    <div>
+      <h3>About Gatlinburg</h3>
+      <p>
+        Gatlinburg is a scenic mountain town known for its outdoor activities, downtown attractions, and 
+        gateway access to Great Smoky Mountains National Park. It's perfect for families, hikers, and sightseers.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

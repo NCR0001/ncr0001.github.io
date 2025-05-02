@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lodging</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background: #121212; color: #e0e0e0; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #1f4037; padding: 1em; text-align: center; color: white; }
+    .image-row { display: flex; justify-content: space-around; padding: 20px; }
+    .image-row img { max-width: 45%; border-radius: 10px; }
+    .content-row { display: flex; justify-content: space-around; padding: 20px; gap: 20px; }
+    .city-column { background: #1e1e1e; border-radius: 8px; padding: 20px; width: 45%; }
+    h2 { color: #76c7b7; }
+    ul { list-style-type: none; padding: 0; }
+    ul li { margin-bottom: 15px; }
+    a { color: #76c7b7; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .home-button-container { text-align: center; padding: 30px 0; }
+    .home-button { background: #444; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lodging in Gatlinburg & Pigeon Forge</h1>
+  </header>
+	<div class="navbar">
+	<div class="dropdown">
+	  <button class="dropbtn">Home</button>
+	  <div class="dropdown-content">
+		<a href="index.html">Home</a>
+	  </div>
+	</div>
+    <div class="dropdown">
+      <button class="dropbtn">About Us</button>
+      <div class="dropdown-content">
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
+    </div>
+	
+    <div class="dropdown">
+      <button class="dropbtn">Gatlinburg</button>
+      <div class="dropdown-content">
+        <a href="gatlinburg.html">Gatlinburg</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="lodging.html">Lodging</a>
+		<a href="restraurants.html">Restaurants</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Pigeon Forge</button>
+      <div class="dropdown-content">
+        <a href="pigeonforge.html">Pigeon Forge</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="lodging.html">Lodging</a>
+		<a href="restraurants.html">Restaurants</a>
+      </div>
+    </div>
+  </div>
+  <div class="image-row">
+    <img src="gatlinburg-lodging.jpg" alt="Gatlinburg Lodging">
+    <img src="pigeonforge-lodging.jpg" alt="Pigeon Forge Lodging">
+  </div>
+
+  <div class="content-row">
+    <div class="city-column">
+      <h2>Gatlinburg Lodging</h2>
+      <ul>
+        <li><a href="https://www.hilton.com/en/hotels/gktpvdt-the-park-vista-gatlinburg/" target="_blank">The Park Vista</a></li>
+        <li><a href="https://greystonelodgetn.com/" target="_blank">Greystone Lodge on the River</a></li>
+        <li><a href="https://www.westgateresorts.com/hotels/tennessee/gatlinburg/westgate-smoky-mountain-resort/" target="_blank">Westgate Smoky Mountain Resort & Spa</a></li>
+        <li><a href="https://www.zoders.com/" target="_blank">Zoder's Inn & Suites</a></li>
+      </ul>
+    </div>
+    <div class="city-column">
+      <h2>Pigeon Forge Lodging</h2>
+      <ul>
+        <li><a href="https://www.margaritavilleresorts.com/margaritaville-island-hotel-pigeon-forge" target="_blank">Margaritaville Island Hotel</a></li>
+        <li><a href="https://www.myinnontheriver.com/" target="_blank">The Inn on the River</a></li>
+        <li><a href="https://www.musicroadresort.com/" target="_blank">Music Road Resort</a></li>
+        <li><a href="https://www.wildernessatthesmokies.com/" target="_blank">Wilderness at the Smokies</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="home-button-container">
+    <button class="home-button" onclick="location.href='index.html'">Return to Home Page</button>
+  </div>
+</body>
+</html>

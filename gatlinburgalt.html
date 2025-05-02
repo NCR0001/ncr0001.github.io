@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gatlinburg</title>
+  <style>
+    body { background: #121212; color: #e0e0e0; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #1f4037; padding: 1em; text-align: center; color: white; }
+    button.home-button { background: #444; color: white; padding: 10px 20px; margin: 20px; border: none; border-radius: 5px; cursor: pointer; }
+    .main-image { display: block; margin: 0 auto 20px auto; max-width: 90%; border-radius: 10px; }
+    section { max-width: 800px; margin: auto; padding: 20px; background: #1e1e1e; border-radius: 8px; margin-bottom: 20px; }
+    h2 { color: #76c7b7; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Gatlinburg</h1>
+  </header>
+
+  <div style="text-align:center">
+    <button class="home-button" onclick="location.href='index.html'">Return to Home Page</button>
+  </div>
+
+  <img id="mainImage" class="main-image" src="gatlinburg1.jpg" alt="Gatlinburg Aerial View">
+
+  <section>
+    <h2>About Gatlinburg</h2>
+    <p>Gatlinburg is a quaint mountain town in eastern Tennessee, rich in Appalachian culture and surrounded by the stunning Great Smoky Mountains National Park. Visitors come for the natural beauty, welcoming atmosphere, and charming local traditions.</p>
+  </section>
+
+  <section>
+    <h2>Attractions</h2>
+    <p>Enjoy panoramic views from the Gatlinburg Space Needle, hike scenic trails, or explore Ripley's Aquarium of the Smokies. The town is packed with outdoor adventures and family-friendly entertainment.</p>
+  </section>
+
+  <section>
+    <h2>Restaurants</h2>
+    <p>Gatlinburg offers a wide variety of dining experiences, from pancake houses to rustic BBQ joints to elegant mountain-view restaurants that serve Southern and international cuisine.</p>
+  </section>
+
+  <section>
+    <h2>Lodging</h2>
+    <p>Choose from cozy log cabins, luxurious resorts, or convenient hotels nestled in the Smokies. Gatlinburg's lodging is known for its scenic views and warm hospitality.</p>
+  </section>
+
+  <script>
+    const images = ["gatlinburg1.jpg", "gatlinburg2.jpg"];
+    let current = 0;
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      document.getElementById("mainImage").src = images[current];
+    }, 4000);
+  </script>
+</body>
+</html>
+

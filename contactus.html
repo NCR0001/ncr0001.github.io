@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    /* Contact section */
+    .contact-container {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-container h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .contact-container textarea {
+      height: 150px;
+      resize: none;
+    }
+
+    .contact-container button {
+      width: 100%;
+      padding: 14px;
+      background-color: #333;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact-container button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+	<div class="dropdown">
+	  <button class="dropbtn">Home</button>
+	  <div class="dropdown-content">
+		<a href="index.html">Home</a>
+	  </div>
+	</div>
+    <div class="dropdown">
+      <button class="dropbtn">About Us</button>
+      <div class="dropdown-content">
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
+    </div>
+	
+    <div class="dropdown">
+      <button class="dropbtn">Gatlinburg</button>
+      <div class="dropdown-content">
+        <a href="gatlinburg.html">Gatlinburg</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="lodging.html">Lodging</a>
+		<a href="restraurants.html">Restaurants</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Pigeon Forge</button>
+      <div class="dropdown-content">
+        <a href="pigeonforge.html">Pigeon Forge</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="lodging.html">Lodging</a>
+		<a href="restraurants.html">Restaurants</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="contact-container">
+    <h1>Contact Us!</h1>
+    <input type="text" id="firstName" placeholder="First Name">
+    <input type="text" id="lastName" placeholder="Last Name">
+    <textarea id="message" placeholder="Your message..."></textarea>
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <!-- Send Message button placebo -->
+  <script>
+    function sendMessage() {
+      document.getElementById('firstName').value = '';
+      document.getElementById('lastName').value = '';
+      document.getElementById('message').value = 'Message Sent!';
+    }
+  </script>
+
+</body>
+</html>

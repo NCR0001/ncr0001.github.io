@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pigeon Forge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="dropdown">
+	  <button class="dropbtn">Home</button>
+	  <div class="dropdown-content">
+		<a href="index.html">Home</a>
+	  </div>
+	</div>
+    <div class="dropdown">
+      <button class="dropbtn">About Us</button>
+      <div class="dropdown-content">
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
+    </div>
+	
+    <div class="dropdown">
+      <button class="dropbtn">Gatlinburg</button>
+      <div class="dropdown-content">
+        <a href="gatlinburg.html">Gatlinburg</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="lodging.html">Lodging</a>
+		<a href="restraurants.html">Restaurants</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Pigeon Forge</button>
+      <div class="dropdown-content">
+        <a href="pigeonforge.html">Pigeon Forge</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="lodging.html">Lodging</a>
+		<a href="restraurants.html">Restaurants</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <script>
+      function changeImage(img, newSrc) {
+        img.dataset.original = img.src;
+        img.src = newSrc;
+      }
+  
+      function restoreImage(img) {
+        img.src = img.dataset.original;
+      }
+    </script>
+  </head>
+  <body>
+  
+    <h2>Hover over the image below</h2>
+  
+    <img
+      src="images/Pigeon Forge view.jpg"
+      class="hover-image"
+      alt="Sky View"
+      onmouseover="changeImage(this, 'images/forge.jpg')"
+      onmouseout="restoreImage(this)"
+    />
+  
+  </body>
+    </div> 
+
+    <!-- Pigeon Forge Info -->
+    <div class="section-container">
+      <div class="section">
+        <h3>Basic Info on Pigeon Forge Attractions</h3>
+        <p>Visit Dollywood, The Island, WonderWorks, and the Titanic Museum for family fun and adventure.</p>
+      </div>
+      <div class="section">
+        <h3>Basic Info on Pigeon Forge Restaurants</h3>
+        <p>Enjoy southern comfort food at Old Mill Restaurant, Paula Deen's Family Kitchen, and more.</p>
+      </div>
+      <div class="section">
+        <h3>Basic Info on Pigeon Forge Lodging</h3>
+        <p>Stay in scenic cabins, hotels, or cozy lodges located near the action and mountain views.</p>
+      </div>
+    </div>
+
+    <div>
+      <h3>About Pigeon Forge</h3>
+      <p>
+        Pigeon Forge is a lively town in the Smoky Mountains known for its family-friendly attractions,
+        thrilling entertainment, and southern hospitality. It’s home to Dollywood, countless shows,
+        and easy access to the natural beauty of the Great Smoky Mountains National Park.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

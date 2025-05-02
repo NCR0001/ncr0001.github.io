@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pigeon Forge</title>
+  <style>
+    body { background: #121212; color: #e0e0e0; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #1f4037; padding: 1em; text-align: center; color: white; }
+    button.home-button { background: #444; color: white; padding: 10px 20px; margin: 20px; border: none; border-radius: 5px; cursor: pointer; }
+    .main-image { display: block; margin: 0 auto 20px auto; max-width: 90%; border-radius: 10px; }
+    section { max-width: 800px; margin: auto; padding: 20px; background: #1e1e1e; border-radius: 8px; margin-bottom: 20px; }
+    h2 { color: #76c7b7; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Pigeon Forge</h1>
+  </header>
+
+  <div style="text-align:center">
+    <button class="home-button" onclick="location.href='index.html'">Return to Home Page</button>
+  </div>
+
+  <img id="mainImage" class="main-image" src="pigeonforge1.jpg" alt="Pigeon Forge Aerial View">
+
+  <section>
+    <h2>About Pigeon Forge</h2>
+    <p>Pigeon Forge is a vibrant mountain town known for its entertainment, shopping, and hospitality. Nestled near the Smoky Mountains, it blends fun, family attractions with Southern charm and culture.</p>
+  </section>
+
+  <section>
+    <h2>Attractions</h2>
+    <p>From Dollywood theme park to comedy shows and mini golf, Pigeon Forge offers endless fun for visitors of all ages. It's a hub for entertainment and excitement in the Smokies.</p>
+  </section>
+
+  <section>
+    <h2>Restaurants</h2>
+    <p>Enjoy hearty Southern meals, classic diners, and international cuisine throughout Pigeon Forge. There’s something for every taste and budget.</p>
+  </section>
+
+  <section>
+    <h2>Lodging</h2>
+    <p>Whether you're looking for luxurious resorts, rustic cabins, or budget-friendly hotels, Pigeon Forge has a wide range of places to stay, all with great access to attractions.</p>
+  </section>
+
+  <script>
+    const images = ["pigeonforge1.jpg", "pigeonforge2.jpg"];
+    let current = 0;
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      document.getElementById("mainImage").src = images[current];
+    }, 4000);
+  </script>
+</body>
+</html>
