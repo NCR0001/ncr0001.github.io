@@ -43,16 +43,12 @@
       </div>
     </div>
   </div>
-	<!-- Image Rollover - I initially forgot this had to be rollover hence the hover names -->
-  <div class="hover-image">
-    <img id="rollover-img"
-       src="gatlinburg.png"
-       alt="The Two Cities"
-       onmouseover="this.src='pigeonforge.jpg'"
-       onmouseout="this.src='gatlinburg.png'">
-  </div>
-
-  
+  	<!-- Image Rollover - I initially forgot this had to be rollover hence the hover names -->
+	<div class="hover-image">
+		<img id="rollover-img"
+		  src="gatlinburg.png"
+		  alt="The Two Cities">
+	</div>
    <!-- Lodging Attraction and Restaurants -->
   <div class="boxes">
     <div class="box">
@@ -71,5 +67,16 @@
       <div class="text">Stay in the Smokey Mountains or down in town near Dollywood, there are plenty of places to rest your head and explore the region.</div>
     </div>
   </div>
+<script>
+  const img = document.getElementById('rollover-img');
+
+  img.addEventListener('mouseover', () => {
+    img.src = 'pigeonforge.jpg';
+  });
+
+  img.addEventListener('mouseout', () => {
+    img.src = 'gatlinburg.png';
+  });
+</script>
 </body>
 </html>
